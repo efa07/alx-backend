@@ -38,16 +38,19 @@ class Server:
             }
         return self.__indexed_dataset
 
-    def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict[str, Any]:
+    def get_hyper_index(self, index: int = None, page_size: int = 10)
+    -> Dict[str, Any]:
         """
         Get a dictionary containing pagination metadata and the dataset page.
 
         Args:
-        - index (int): The current start index of the return page (default is None).
+        - index (int): The current start index of the return page
+        (default is None).
         - page_size (int): The number of items per page (default is 10).
 
         Returns:
-        - dict: A dictionary containing pagination metadata and the dataset page.
+        - dict: A dictionary containing pagination metadata and the
+        dataset page.
         """
         assert isinstance(index, int) and index >= 0
         assert isinstance(page_size, int) and page_size > 0
@@ -72,4 +75,3 @@ class Server:
             "page_size": len(data),
             "data": data
         }
-

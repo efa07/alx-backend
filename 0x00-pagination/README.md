@@ -26,16 +26,20 @@ Clone the repository:
 
 ```sh
 git clone https://github.com/efa07/alx-backend.git
-cd alx-backend/0x00-pagination```
+cd alx-backend/0x00-pagination
+```
 Create and activate a virtual environment (optional but recommended):
 
 
-```python3 -m venv venv
-source venv/bin/activate``` 
+```
+python3 -m venv venv
+source venv/bin/activate
+``` 
 Install the required dependencies:
 
 ```sh
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 ### Usage
 The main script for this project is pagination.py. It contains the logic for handling pagination.
 
@@ -43,7 +47,8 @@ The main script for this project is pagination.py. It contains the logic for han
 To run the script, use the following command:
 
 ```sh
-python pagination.py```
+python pagination.py
+```
 
 ### Pagination Parameters
 - Page Number: The current page number (default is 1).

@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 '''Task 1: FIFO caching
@@ -10,7 +9,7 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    '''Inherits from `BaseCaching` 
+    '''Inherits from `BaseCaching`
     and is a caching system.
     '''
 
@@ -36,4 +35,3 @@ class FIFOCache(BaseCaching):
         '''return the value in self.cache_data linked to key
         '''
         return self.cache_data.get(key, None)
-

@@ -27,8 +27,12 @@ babel = Babel(app)
 def get_locale():
     """
     Determines the best language match based on
-    the request's Accept-Language headers.
+    the request's Accept-Language headers
+    or locale parameter in the query string.
     """
+    locale = request.args.get('locale')
+    if locale in app.config['LANGUAGES']:
+        return locale
 
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
@@ -39,7 +43,7 @@ def index():
     Renders the index.html template with translated content.
     """
 
-    return render_template('3-index.html')
+    return render_template('0-index.html')
 
 
 if __name__ == '__main__':
